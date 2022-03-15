@@ -34,6 +34,6 @@ Puppet::Functions.create_function(:'inifile::create_ini_settings') do
       end
     end
 
-    call_function('create_resources', 'ini_setting', resources, defaults)
+    scope.call_function('create_resources', 'ini_setting', resources, defaults)
   end
 end
